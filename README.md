@@ -1,22 +1,20 @@
-# Welcome to Defold
-
-This project was created from the "mobile" project template. This means that the settings in ["game.project"](defold://open?path=/game.project) have been changed to be suitable for a mobile game:
-
-- The screen size is set to 640x1136
-- The projection is set to Fixed Fit
-- Orientation is fixed vertically
-- Android and iOS icons are set
-- iOS launch images (blank ones) are set
-- Mouse click/single touch is bound to action "touch"
-- A simple script in a game object is set up to receive and react to input
-- Accelerometer input is turned off (for better battery life)
-
-[Build and run](defold://build) to see it in action. You can of course alter these settings to fit your needs.
-
-Check out [the documentation pages](https://defold.com/learn) for examples, tutorials, manuals and API docs.
-
-If you run into trouble, help is available in [our forum](https://forum.defold.com).
-
-Happy Defolding!
-
----
+<p> There are five levels in the game, any one can be selected in the menu. </p>
+<p> They are also looped, that is, after the fifth level, the first one goes. </p>
+<p> A back button was made to return to the selection menu. </p>
+<p>Words on each level in WordSeach.</p>
+<p>Level 1 (1 word):</p>
+<p>Game</p>
+<p>Level 2 (2 words):</p>
+<p>Rhombus</p>
+<p>Ticket</p>
+<p>Level 3 (1 word):</p>
+<p>Ice cream</p>
+<p>Level 4 (3 words):</p>
+<p>Count</p>
+<p>Husband</p>
+<p>House</p>
+<p>Level 5 (4 words):</p>
+<p>Lion</p>
+<p>Pop</p>
+<p>Movie</p>
+<p>Way</p>
