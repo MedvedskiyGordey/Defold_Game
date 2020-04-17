@@ -1,0 +1,21 @@
+local labelValue = ""
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("rotate") then    --block rotation
+		local rot = go.get_rotation()
+		rot = vmath.quat_rotation_z(1.1775)
+		go.set_rotation(rot)
+	elseif message_id == hash("rotate_revers") then --returning the block to its original state
+		local rot = go.get_rotation()
+		rot = vmath.quat_rotation_z(0)
+		go.set_rotation(rot)
+	elseif message_id == hash("r_r") then
+		--sending a block of its "letter" with a message in "board.script"
+		labelValue = label.get_text("#word_label")
+		msg.post("/level#board", "revers", {mes = labelValue})
+	elseif message_id == hash("lab") then
+		label.set_text("#word_label", ""..message.lab.."")--letter assignment
+	elseif message_id == hash("completed") then
+		label.set_text("#word_label", "")                 --clear label
+	end
+end
